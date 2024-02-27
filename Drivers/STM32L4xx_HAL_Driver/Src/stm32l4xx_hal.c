@@ -183,9 +183,6 @@ HAL_StatusTypeDef HAL_Init(void)
     /* Init the low level hardware */
     HAL_MspInit();
   }
-  __HAL_RCC_TIM3_CLK_ENABLE(); // Enable TIM3 clock
-  __HAL_RCC_GPIOA_CLK_ENABLE(); // Ensure GPIOA clock is enabled
-
 
   /* Return function status */
   return status;
